@@ -7,4 +7,6 @@ script:
  - xcodebuild test -project NightlyTest.xcodeproj -scheme NightlyTest -destination 'platform=iOS Simulator,name=iPhone XS'
 after_success:
  - git fetch -p
- - git merge nightly
+ - git checkout nightly
+ - git merge develop
+ - git push
