@@ -27,7 +27,7 @@ class NightlyTestUITests: XCTestCase {
     }
 
     func testExample() {
-        XCTFail("wow uh oh")
+        XCTFail("wow uhd oh")
     }
 
 }
