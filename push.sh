@@ -31,7 +31,7 @@ setup_git() {
 push_to_nightly() {
   git checkout nightly
   git merge develop
-  git remote add origin-pages https://${GH_TOKEN}@github.com/daametsi/nightlytest.git > /dev/null 2>&1
+  git remote add nightly https://${GH_TOKEN}@github.com/daametsi/nightlytest.git > /dev/null 2>&1
   git push
 }
 
