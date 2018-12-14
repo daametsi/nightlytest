@@ -19,7 +19,7 @@ create_all_branches() {
   done
 
   # finally, go back to where we were at the beginning
-  git checkout ${build_head}
+  #git checkout ${build_head}
 }
 
 setup_git() {
