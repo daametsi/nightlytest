@@ -30,4 +30,8 @@ class NightlyTestUITests: XCTestCase {
         XCTAssertTrue(true)
     }
 
+    func wowExample() {
+        XCTAssertTrue(true)
+    }
+
 }
