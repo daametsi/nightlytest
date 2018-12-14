@@ -25,13 +25,14 @@ create_all_branches() {
 setup_git() {
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
+
+  git config credential.helper "store --file=.git/credentials"
+  echo "https://${GITHUB_API_KEY}:@github.com" > .git/credentials
 }
 
 push_to_nightly() {
   git checkout nightly
   git merge develop
-  echo ${GH_TOKEN}
-  git remote add nightly https://${GH_TOKEN}@github.com/daametsi/nightlytest.git > /dev/null 2>&1
   git push
 }
 

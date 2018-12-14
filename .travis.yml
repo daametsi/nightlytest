@@ -7,6 +7,14 @@ script:
  - xcodebuild test -project NightlyTest.xcodeproj -scheme NightlyTest -destination 'platform=iOS Simulator,name=iPhone XS'
 after_success:
  - "./push.sh"
+#notifications: # set notification options
+#  email:
+#    recipients:
+#      - me@example.com
+#      - you@example.com
+#
+#    on_success: [never]
+#    on_failure: [always]
 env:
   global:
     secure: gWxPi5bsyGoMrcvDSNbh6unZjnSniTPR1DV7y4Kvqo82SGl7UiFFwd8ccfUWOzU4PIj0KnhzC01i6YS3pGsd7R2u4eGvnXiRUh3S/y3rMrQmnozT5v+EqsZXM9xJyJ5zh2su+vPBOAzGPdres3rj2hWAWOekDB4+vN9gp6MCXzEB+zO9dMfVELt6UUqhAGqMgGT1nYOvENiw0rHOYXlHBOeaHIy3acv3qyCGibdxFwkG+XDhMHnUeFSQukj7Tsx3Yra/Tf5CXSulCbi/5QjtSHa7ziAPfyYBrT2/v4CVdoJmsSoEg+GkOIOMPyyEsFuZSX0uP6cD5Tpk6jCMKPKI7Fk70aRTF+ZwSBKghuAkABHfnhjXp+SEOBG8unMNWaMKUdc782tZxUP4+j6kbtMx49V4xBx1vvc6fMAJao4PZFXmQF35sOl9YHvfa990hIsHSZEqKFEFkb2sHGm4+4oUUFbzWgO9cUoBwOiHE78IEqG3mSkDjd3L+sdKyasbQOkuUbx9/BKe0ml94E5LZNUz5pJ+EOHewBlylbuOw24Bu/Cov1gboGi6ysWydKfWPV3cXxzMWWvnPM3udM7HxfxQgnYFoiEzT3giQxWOJkOk48tYe6UBEjhgRZdJb6Hufmf5uehGKbCZP90+FJJwVlOVAbnsP90uCiSxLSveoLUTehY=
