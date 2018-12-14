@@ -7,3 +7,6 @@ script:
  - xcodebuild test -project NightlyTest.xcodeproj -scheme NightlyTest -destination 'platform=iOS Simulator,name=iPhone XS'
 after_success:
  - ./push.sh
+env:
+  global:
+    secure: "dEdJSuuTYd0LNbP00DQuiqPtVYnuGOF8MXEQ2vGeWMKBhVQo/7TdTOvWiYRPDY4TsnKn+YlnFyqwEKzerd+R80cC7YFCpVUxI6USUyZwYPAowCvYQU3vPAJ52ysa01BF+WNREnUH0aj7ZlPVsQBCFXuU+gzVbklp2mdLmVRQF/I16lRX031S01lR90A/74++7BsmCs+e1rWJNxQ/oxHw6e2dg7Tvg+4VYfrfGMEDjrxWQH/KmfyXQkCTyBv6zqdJZX3VBpAFDQ1Xw1Pbo1lPkLVaiVPmA1tQ4rvg56+Xz7iCZd2yWG6oPjEOjUFQVZ/ZS42Bm/Q5pZWaRcb1WLXDFXbu1iBUvlxOtFg6acwz5qAD+ShCiRlGjbPK0CKRvKQdMflHSlo4KoNJivolyiaaEzSFcgD/0lVPzlGzqojFCpjYUKW1vvBW+411FAd1us1IpoRio93ETXqaCLx7sCBJKUqqYLleqCOxxH0TjMyhD6bKNloNL2htsgbmWEdkededvbrrByHzsEXlmCAA+V0E9Kj3DkRNVog1SKxOcrnfDGy3rL++SaaKETKlO9TRsRT358QrbVGZ5ibcvPTXJVVC5BJH/4CLjix3iVrvOYOpYvAoR9KULYG3BjzdNFoKvXYBvTtZ3GUVMjUXkcmjcpRx5TjkmJ6q+RAJXLt0oxdFDlg="
