@@ -4,4 +4,4 @@ xcode_project: NightlyTest.xcodeproj
 xcode_scheme: NightlyTest
 xcode_sdk: iphonesimulator12.1
 script:
- - xcodebuild -project NightlyTest.xcodeproj -scheme NightlyTest -sdk iphonesimulator
+ - xcodebuild test -project NightlyTest.xcodeproj -scheme NightlyTest -destination 'platform=iOS Simulator,name=iPhone XS'
