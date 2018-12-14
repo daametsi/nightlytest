@@ -6,9 +6,9 @@ setup_git() {
 }
 
 push_to_nightly() {
-  git checkout nightly
+  git checkout origin nightly
   git merge develop
-  git push
+  git push origin nightly
 }
 
 setup_git
