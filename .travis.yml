@@ -6,6 +6,5 @@ xcode_sdk: iphonesimulator12.1
 script:
  - xcodebuild test -project NightlyTest.xcodeproj -scheme NightlyTest -destination 'platform=iOS Simulator,name=iPhone XS'
 after_success:
- - git fetch -p \
-&& git commit -am "release v0.1 build x" \
-&& git push origin nightly
+ - git fetch -p
+ - git merge nightly
