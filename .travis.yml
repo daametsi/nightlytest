@@ -1,5 +1,7 @@
-language: objective-c
+language: swift
 osx_image: xcode10.1
 xcode_project: NightlyTest.xcodeproj
 xcode_scheme: NightlyTest
 xcode_sdk: iphonesimulator12.1
+script:
+ - xcodebuild test -project NightlyTest.xcodeproj -scheme NightlyTest -destination 'platform=iOS Simulator,name=iPhone XS'
