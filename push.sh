@@ -23,6 +23,7 @@ create_all_branches() {
 }
 
 setup_git() {
+  git config credential.helper "store --file=.git/credentials"; echo "https://${GITHUB_OAUTH_TOKEN}:@github.com" > .git/credentials 2>/dev/null
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
 }
