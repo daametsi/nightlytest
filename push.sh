@@ -28,9 +28,9 @@ setup_git() {
 }
 
 push_to_nightly() {
-  git checkout origin/nightly
-  git merge origin/develop
-  git push origin/nightly
+  git checkout nightly
+  git merge develop
+  git push
 }
 
 setup_git
